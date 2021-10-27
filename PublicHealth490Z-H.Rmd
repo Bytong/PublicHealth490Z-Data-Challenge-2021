@@ -45,13 +45,15 @@ df <- CA_all_data %>%
                                   show.legend = FALSE) +
                  coord_polar(theta = "y")
 ```
+
 ```{r}
-#PovertyRate summary with histgram, popluation in 2010 and poverty rate
+### Poverty rate summary with histogram, population in 2010 and poverty rate
 df <- CA_all_data
 summary(df$PovertyRate)
 hist(df$PovertyRate, freq=FALSE, breaks=100)
 plot(df$Pop2010, df$PovertyRate)
 ```
+
 ```{r}
 
 ```

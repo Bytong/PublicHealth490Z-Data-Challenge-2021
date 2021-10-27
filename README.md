@@ -1,7 +1,7 @@
 # PublicHealth490Z-Data-Challenge-2021
 This is the Statistics Fall Data Challenge 2021 of Food Access Research done by group H (JInrui Zhou, Yikang Gong, Hongwei Shu, and Baitong Zhao) for Public Health 490Z in Fall 2021 at UMass Amherst.
 
-We mainly use the “CA” sheet in the dataset and focus on “TractKids”, “TractSeniors”, “TractWhite”, “TractBlack”, “TractAsian”, “TractNHOPI”, “TractAIAN”, and “PovertyRate”, and probably “LowIncomeTracts”. We are aiming at the correlation between ages, races, and property rates to the chance of facing food insecurity.
+We mainly use the “CA” sheet in the dataset and focus on “TractKids”, “TractSeniors”, “TractWhite”, “TractBlack”, “TractAsian”, “TractNHOPI”, “TractAIAN”, and “PovertyRate”, and probably “LowIncomeTracts”. We are aiming at the correlation between ages, races, and property rates to the chance of facing food insecurity. All the datasets are available here: https://thisisstatistics.org/
 
 **Null hypothesis:**
 There is no relationship between ages, races, annual family incomes (below/at average/above the federal poverty rate), and food insecurity.

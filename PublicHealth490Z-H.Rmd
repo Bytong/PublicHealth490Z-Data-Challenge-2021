@@ -94,3 +94,12 @@ df <- CA_all_data %>%
                  coord_polar(theta = "y")
 ```
 
+```{r}
+df <- CA_all_data
+hist(df$TractSNAP)
+hist(df$TractHUNV)
+plot(df$TractSNAP, df$TractHUNV)
+```
+
+
+

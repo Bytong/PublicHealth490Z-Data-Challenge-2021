@@ -44,6 +44,8 @@ df <- CA_all_data %>%
                                   posi = position_stack(vjust = 0.1),
                                   show.legend = FALSE) +
                  coord_polar(theta = "y")
+df <- CA_all_data
+cor(df$Urban, df$LowIncomeTracts)
 ```
 
 ```{r}

@@ -99,6 +99,8 @@ df <- CA_all_data
 hist(df$TractSNAP)
 hist(df$TractHUNV)
 plot(df$TractSNAP, df$TractHUNV)
+cor(df$TractSNAP, df$LowIncomeTracts)
+cor(df$TractHUNV, df$LowIncomeTracts)
 ```
 
 

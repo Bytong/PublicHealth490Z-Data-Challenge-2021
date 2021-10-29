@@ -22,7 +22,7 @@ library(ggrepel)
 
 ```{r}
 ###import dataset and a summary
-CA_all_data <- read_excel("This is Statistics Fall Data Challenge 2021 Dataset_ Food Access Research Atlas Data 2019-ASAFDC 2021.xlsx", sheet = 8)
+CA_all_data <- read_excel("Desktop/This is Statistics Fall Data Challenge 2021 Dataset_ Food Access Research Atlas Data 2019-ASAFDC 2021.xlsx", sheet = 8)
 summary(CA_all_data)
 ```
 
@@ -33,6 +33,7 @@ df <- CA_all_data %>%
   count() %>%
   ungroup() %>%
   mutate(pctg = `n` / sum(`n`)) %>%
+  arrange(pctg) %>%
   arrange(pctg) %>%
   mutate(labels = scales::percent(pctg))
   

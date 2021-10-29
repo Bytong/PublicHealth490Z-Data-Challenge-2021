@@ -1,10 +1,10 @@
 # PublicHealth490Z-Data-Challenge-2021
 This is the Statistics Fall Data Challenge 2021 of Food Access Research done by group H for Public Health 490Z in Fall 2021 at UMass Amherst as a course project.
 
-We mainly use the “CA” sheet in the dataset and focus on “TractKids”, “TractSeniors”, “TractWhite”, “TractBlack”, “TractAsian”, “TractNHOPI”, “TractAIAN”, and “PovertyRate”, and probably “LowIncomeTracts”. We are aiming at the correlation between ages, races, and property rates to the chance of facing food insecurity. All the datasets are available here: https://thisisstatistics.org/
+We mainly use the “CA” sheet in the dataset and focus on "lahunv1", "lahunv1share", "tractHUNV", "HUNVFlag", "lahunv1", "lahunv1share", "lahunv10", "lahunv10share", "lasnap1", "lasnap1share", "lasnap10", "lasnap10share", and "tractSNAP". We aim to correlate the total count of housing units without a vehicle in tract and the total count of housing units receiving Supplemental Nutrition Assistance Program(SNAP) benefits in tract along with the group of low income communities to the change of facing food insecurity. All the datasets are available here: https://thisisstatistics.org/
 
 **Null hypothesis:**
-There is no relationship between ages, races, annual family incomes (below/at average/above the federal poverty rate), and food insecurity.
+There is no relationship between access to vehicle, receiving SNAP and the change of facing food insecurity
 
 **Alternative hypothesis:**
 Children (0-17) and seniors (65+) in families of different races (White, African American, Latino, Asian, Native Hawaiian and Other Pacific Islander, American Indian and Alaska Native, Other/Multiple race, Hispanic or Latino population) below/at average/above the federal poverty rate have a higher chance to face food insecurity and have a positive correlation with poverty rates in California.

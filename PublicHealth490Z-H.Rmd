@@ -74,4 +74,23 @@ df <- CA_all_data %>%
                  coord_polar(theta = "y")
 ```
 
+```{r}
+### HUNVFlag (0 or 1)
+df <- CA_all_data %>%
+  group_by(HUNVFlag) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(pctg = `n` / sum(`n`)) %>%
+  arrange(pctg) %>%
+  mutate(labels = scales::percent(pctg))
+  
+  ggplot(df, aes(x = "", 
+                 y = pctg, 
+                 fill = HUNVFlag)) + 
+                 geom_col() + 
+                 geom_label_repel(aes(label = labels),
+                                  posi = position_stack(vjust = 0.1),
+                                  show.legend = FALSE) +
+                 coord_polar(theta = "y")
+```
 

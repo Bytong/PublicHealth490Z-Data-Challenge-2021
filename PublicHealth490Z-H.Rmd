@@ -55,7 +55,23 @@ plot(df$Pop2010, df$PovertyRate)
 ```
 
 ```{r}
-
+### LowIncomeTracts (0 or 1)
+df <- CA_all_data %>%
+  group_by(LowIncomeTracts) %>%
+  count() %>%
+  ungroup() %>%
+  mutate(pctg = `n` / sum(`n`)) %>%
+  arrange(pctg) %>%
+  mutate(labels = scales::percent(pctg))
+  
+  ggplot(df, aes(x = "", 
+                 y = pctg, 
+                 fill = LowIncomeTracts)) + 
+                 geom_col() + 
+                 geom_label_repel(aes(label = labels),
+                                  posi = position_stack(vjust = 0.1),
+                                  show.legend = FALSE) +
+                 coord_polar(theta = "y")
 ```
 
 
